@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to creative solution</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href=""><strong>Landing</strong><span>page</a></span>
+            <i class="fa fa-bars" id="menu" aria-hidden="true"></i>
+            <i class="fa fa-times" id="menuclose" aria-hidden="true"></i>
+        </div>
+        <div class="navbar_box">
+           
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </div>
+            <div class="search_box">
+                <form action="">
+                    <input type="text" placeholder="search...">
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+
+        <div class="hero_sec">
+            <div class="hero_container">
+                <h2>Creative</h2>
+                <h1>solutions</h1>
+                <p>Description of services, who we are as a company and <br> some filler text about the company </p>
+                <button>
+                    Click Here
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+
+
+    <script>
+        $(document).ready(function(){
+    $("#menu").click(function(){
+        $(".nav").animate({"left":"0px"},800)
+        $('#menu').hide();
+        $('#menuclose').show();
+    })
+
+    $("#menuclose").click(function(){
+         $(".nav").animate({"left":"-100%"},800)
+        $('#menu').show();
+        $('#menuclose').hide();
+
+    })
+
+
+    
+
+   })
+   
+    </script>
+
+</body>
+
+</html>
